@@ -137,7 +137,7 @@ const AnimePage = () => {
     };
   }, []);
 
-  const handleEpisodetoggle = (id) => {
+    const handleEpisodetoggle = (id) => {
     setToggle((prev) => {
       if (prev === id) {
         return id; // Prevent toggling out
@@ -149,9 +149,9 @@ const AnimePage = () => {
           setCurrentVideo(selectedVideo.HDSUB2);
         } else if (selectedserver === "HD1") {
           setCurrentVideo(selectedVideo.HD1);
-        } else (selectedserver === "HD2") {
+        } else if (selectedserver === "HD2") {
           setCurrentVideo(selectedVideo.HD2);
-        }
+        } 
         return id;
       }
     });
