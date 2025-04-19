@@ -31,9 +31,9 @@ const Countdown = ({ targetDateTime }) => {
 
 const AnimePage = () => {
   const videos = [
-   { id: 1,  src: "", HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/F3BuqhfjILSx/",HDSUB2:"https://sstream.site/e/vospb2pc655q"},
-   { id: 2,  src: "", HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/62ynSZQvau2T/",HDSUB2:"https://sstream.site/e/mwdpt1vv2cc2"},
-   { id: 3,  src: "", HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/ke36JkX4fara/",HDSUB2:"https://sstream.site/e/15n4jb305omf"},
+   { id: 1,  HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/F3BuqhfjILSx/",HDSUB2:"https://sstream.site/e/vospb2pc655q"},
+   { id: 2,  HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/62ynSZQvau2T/",HDSUB2:"https://sstream.site/e/mwdpt1vv2cc2"},
+   { id: 3,  HD1:"", HD2:"",HDSUB1:"https://newer.stream/v/ke36JkX4fara/",HDSUB2:"https://sstream.site/e/15n4jb305omf"},
 
   ];
 
@@ -149,10 +149,8 @@ const AnimePage = () => {
           setCurrentVideo(selectedVideo.HDSUB2);
         } else if (selectedserver === "HD1") {
           setCurrentVideo(selectedVideo.HD1);
-        } else if (selectedserver === "HD2") {
+        } else (selectedserver === "HD2") {
           setCurrentVideo(selectedVideo.HD2);
-        } else {
-          setCurrentVideo(selectedVideo.src);
         }
         return id;
       }
@@ -307,18 +305,6 @@ const AnimePage = () => {
               }}
             >
               HD-2
-            </button>
-            <button
-              style={{ fontSize: "15px" }}
-              className={`px-4 py-2 text-sm rounded ml-2 ${
-                selectedserver === "Multi" ? "bg-yellow-400 text-black" : "bg-gray-700"
-              }`}
-              onClick={() => {
-                setSelectedServer("Multi");
-                setCurrentVideo(video.src);
-              }}
-            >
-              Multi
             </button>
           </p>
           </div>
