@@ -35,6 +35,8 @@ const AnimePage = () => {
    { id: 2,  HD1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-dub-episode-2", HD2:"https://megaplay.buzz/stream/s-2/136198/dub",HDSUB1:"https://newer.stream/v/62ynSZQvau2T/",HDSUB2:"https://sstream.site/e/mwdpt1vv2cc2"},
    { id: 3,  HD1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-dub-episode-3", HD2:"https://megaplay.buzz/stream/s-2/136405/dub",HDSUB1:"https://newer.stream/v/ke36JkX4fara/",HDSUB2:"https://sstream.site/e/15n4jb305omf"},
    { id: 4,  HD1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-dub-episode-4", HD2:"https://megaplay.buzz/stream/s-2/136604/dub",HDSUB1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-episode-4",HDSUB2:"https://megaplay.buzz/stream/s-2/136604/sub"},
+   { id: 5,  HD1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-dub-episode-5", HD2:"https://megaplay.buzz/stream/s-2/136797/dub",HDSUB1:"https://2anime.xyz/embed/sword-of-the-demon-hunter-episode-5",HDSUB2:"https://megaplay.buzz/stream/s-2/136797/sub"},
+    
 
     
 
@@ -159,7 +161,7 @@ const AnimePage = () => {
       }
     });
   };
-  const nextEpisodeRelease = '2025-04-28T20:30:00';
+  const nextEpisodeRelease = '2025-05-05T20:30:00';
 
 
   return (
